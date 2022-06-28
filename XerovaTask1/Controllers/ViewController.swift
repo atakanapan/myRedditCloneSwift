@@ -16,7 +16,8 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate{
     var networkManager = NetworkManager()
-    var posts:[Child]?
+    var posts:[Child]? = [Child]()
+    var posts2 = [Child]()
     var indexPathPressed: Int = 0
     
     //Liste kismi
@@ -46,20 +47,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("Not Connected")
             let cdValues = setCDtoPosts()
             if (setCDtoPosts() != nil) {
-             //   self.posts = postsArr as? [Child]
-                for i in 0...(cdValues?.count ?? 0) {
-                    self.posts?[i].data.id = cdValues?[i].id
-                    self.posts?[i].data.score = Int(exactly: cdValues?[i].score ?? 0)!
-                    self.posts?[i].data.selftext = cdValues?[i].selftext
-                    self.posts?[i].data.thumbnail = cdValues?[i].thumbnail
-                    self.posts?[i].data.title = cdValues?[i].title
-                    self.posts?[i].data.url = cdValues?[i].url
+                for cdValue in cdValues ?? [] {
+                    var tempVar = Child(data: Post())
+                    tempVar.data.id = cdValue.id
+                    tempVar.data.score = Int(exactly: cdValue.score )!
+                    tempVar.data.selftext = cdValue.selftext
+                    tempVar.data.thumbnail = cdValue.thumbnail
+                    tempVar.data.title = cdValue.title
+                    tempVar.data.url = cdValue.url
+                    posts?.append(tempVar)
                 }
             }
             else {
                 self.posts = [Child]()
             }
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+
         }
         
         view.addSubview(tableView)
