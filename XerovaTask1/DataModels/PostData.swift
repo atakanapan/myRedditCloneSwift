@@ -20,17 +20,17 @@ public struct ResultsData: Decodable {
 
 // MARK: - Child
 public struct Child: Decodable {
-    let data: Post
+    var data: Post
 }
 
 // MARK: - ChildData
 struct Post: Decodable, Identifiable{
-    let selftext: String?
-    let id: String
-    let title: String?
-    let score: Int?
-    let url: String? //image
-    let thumbnail: String?
+    var selftext: String?
+    var id: String?
+    var title: String?
+    var score: Int?
+    var url: String? //image
+    var thumbnail: String?
     //let preview: Preview?
 }
 

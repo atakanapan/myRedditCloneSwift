@@ -11,8 +11,8 @@ import CoreData
 // İnternet kkontrolü yap ✅
 // Eğer internet gibi servis çaprısını engelleyecek birşey varsa ✅
 // coredata üzerinde postData modeli oluştur servis çağrısı sonrası gelen datalaro buraya kaydet. ✅
-// Detay ekranında datayı coredatadan al.
-// Not: Uygulama açıldığında coredata kontrolü yap data var mı yok mu?
+// Detay ekranında datayı coredatadan al. ❌
+// Not: Uygulama açıldığında coredata kontrolü yap data var mı yok mu? ✅
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate{
     var networkManager = NetworkManager()
@@ -29,7 +29,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         if NetworkMonitor.shared.isConnected {
             print("Connected")
             networkManager.fetchData(){(children) in
@@ -41,11 +40,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.saveUserData(children)
                 }
             }
-            //getUserData()
+            self.tableView.reloadData()
         }
         else {
             print("Not Connected")
-            
+            let cdValues = setCDtoPosts()
+            if (setCDtoPosts() != nil) {
+             //   self.posts = postsArr as? [Child]
+                for i in 0...(cdValues?.count ?? 0) {
+                    self.posts?[i].data.id = cdValues?[i].id
+                    self.posts?[i].data.score = Int(exactly: cdValues?[i].score ?? 0)!
+                    self.posts?[i].data.selftext = cdValues?[i].selftext
+                    self.posts?[i].data.thumbnail = cdValues?[i].thumbnail
+                    self.posts?[i].data.title = cdValues?[i].title
+                    self.posts?[i].data.url = cdValues?[i].url
+                }
+            }
+            else {
+                self.posts = [Child]()
+            }
             self.tableView.reloadData()
         }
         
@@ -183,21 +196,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(error)
         }
     }
-    func setCDtoPosts(){
+    func setCDtoPosts() -> [Posts]?{
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<Posts>(entityName: "Posts")
         fetchRequest.returnsObjectsAsFaults = false
+        var results: [Posts] = [Posts]()
         do {
-            let results = try context.fetch(fetchRequest)
-            
-            if results.count > 0 {
-                for result in results as! [NSManagedObject] {
-                    self.posts = result as? [Child]
-                }
-            }
+            results = try context.fetch(fetchRequest)
         } catch {
-            print(error)
+            print("Error while setCDtoPosts: \(error)")
+        }
+        if results.count > 0{
+            return results
+        }
+        else{
+            return nil
         }
     }
     
