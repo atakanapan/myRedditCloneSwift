@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A44DE69A2850CDC0008F7597 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DE6992850CDC0008F7597 /* TableHeader.swift */; };
+		A472AAF328529E440052FDA9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472AAF228529E440052FDA9 /* SecondViewController.swift */; };
+		A4AD4F4F284F3BFD008E2CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD4F4E284F3BFD008E2CB4 /* AppDelegate.swift */; };
+		A4AD4F51284F3BFD008E2CB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD4F50284F3BFD008E2CB4 /* SceneDelegate.swift */; };
+		A4AD4F53284F3BFD008E2CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD4F52284F3BFD008E2CB4 /* ViewController.swift */; };
+		A4AD4F58284F3BFE008E2CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AD4F57284F3BFE008E2CB4 /* Assets.xcassets */; };
+		A4AD4F63284F77AD008E2CB4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD4F62284F77AC008E2CB4 /* NetworkManager.swift */; };
+		A4AD4F65284F78AD008E2CB4 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD4F64284F78AD008E2CB4 /* PostData.swift */; };
+		A4B01446286327F20011EE2B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B01445286327F20011EE2B /* NetworkMonitor.swift */; };
+		A4B014492865B1060011EE2B /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4B014472865B1060011EE2B /* CoreData.xcdatamodeld */; };
+		A4B014512865BC7F0011EE2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B0144F2865BC7F0011EE2B /* Main.storyboard */; };
+		A4B014522865BC7F0011EE2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B014502865BC7F0011EE2B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A44DE6992850CDC0008F7597 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
+		A472AAF228529E440052FDA9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A4AD4F4B284F3BFD008E2CB4 /* XerovaTask1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XerovaTask1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AD4F4E284F3BFD008E2CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4AD4F50284F3BFD008E2CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4AD4F52284F3BFD008E2CB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4AD4F57284F3BFE008E2CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4AD4F5C284F3BFE008E2CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AD4F62284F77AC008E2CB4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A4AD4F64284F78AD008E2CB4 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		A4B01445286327F20011EE2B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		A4B014482865B1060011EE2B /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		A4B0144F2865BC7F0011EE2B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A4B014502865BC7F0011EE2B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4AD4F48284F3BFD008E2CB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4AD4F42284F3BFD008E2CB4 = {
+			isa = PBXGroup;
+			children = (
+				A4AD4F4D284F3BFD008E2CB4 /* XerovaTask1 */,
+				A4AD4F4C284F3BFD008E2CB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4AD4F4C284F3BFD008E2CB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD4F4B284F3BFD008E2CB4 /* XerovaTask1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4AD4F4D284F3BFD008E2CB4 /* XerovaTask1 */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD4F4E284F3BFD008E2CB4 /* AppDelegate.swift */,
+				A4AD4F50284F3BFD008E2CB4 /* SceneDelegate.swift */,
+				A4B0144A2865B48D0011EE2B /* Controllers */,
+				A4B0144B2865B5450011EE2B /* Networking */,
+				A4B0144C2865B5B40011EE2B /* DataModels */,
+				A4ECEB912865BE1C0084D593 /* View */,
+				A4AD4F57284F3BFE008E2CB4 /* Assets.xcassets */,
+				A4AD4F5C284F3BFE008E2CB4 /* Info.plist */,
+			);
+			path = XerovaTask1;
+			sourceTree = "<group>";
+		};
+		A4B0144A2865B48D0011EE2B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD4F52284F3BFD008E2CB4 /* ViewController.swift */,
+				A472AAF228529E440052FDA9 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A4B0144B2865B5450011EE2B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD4F62284F77AC008E2CB4 /* NetworkManager.swift */,
+				A4B01445286327F20011EE2B /* NetworkMonitor.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A4B0144C2865B5B40011EE2B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD4F64284F78AD008E2CB4 /* PostData.swift */,
+				A4B014472865B1060011EE2B /* CoreData.xcdatamodeld */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		A4ECEB912865BE1C0084D593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A44DE6992850CDC0008F7597 /* TableHeader.swift */,
+				A4B0144F2865BC7F0011EE2B /* Main.storyboard */,
+				A4B014502865BC7F0011EE2B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4AD4F4A284F3BFD008E2CB4 /* XerovaTask1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AD4F5F284F3BFE008E2CB4 /* Build configuration list for PBXNativeTarget "XerovaTask1" */;
+			buildPhases = (
+				A4AD4F47284F3BFD008E2CB4 /* Sources */,
+				A4AD4F48284F3BFD008E2CB4 /* Frameworks */,
+				A4AD4F49284F3BFD008E2CB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XerovaTask1;
+			productName = XerovaTask1;
+			productReference = A4AD4F4B284F3BFD008E2CB4 /* XerovaTask1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4AD4F43284F3BFD008E2CB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A4AD4F4A284F3BFD008E2CB4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A4AD4F46284F3BFD008E2CB4 /* Build configuration list for PBXProject "XerovaTask1" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4AD4F42284F3BFD008E2CB4;
+			productRefGroup = A4AD4F4C284F3BFD008E2CB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4AD4F4A284F3BFD008E2CB4 /* XerovaTask1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4AD4F49284F3BFD008E2CB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B014522865BC7F0011EE2B /* LaunchScreen.storyboard in Resources */,
+				A4AD4F58284F3BFE008E2CB4 /* Assets.xcassets in Resources */,
+				A4B014512865BC7F0011EE2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4AD4F47284F3BFD008E2CB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AD4F65284F78AD008E2CB4 /* PostData.swift in Sources */,
+				A4B01446286327F20011EE2B /* NetworkMonitor.swift in Sources */,
+				A4B014492865B1060011EE2B /* CoreData.xcdatamodeld in Sources */,
+				A4AD4F63284F77AD008E2CB4 /* NetworkManager.swift in Sources */,
+				A4AD4F53284F3BFD008E2CB4 /* ViewController.swift in Sources */,
+				A4AD4F4F284F3BFD008E2CB4 /* AppDelegate.swift in Sources */,
+				A472AAF328529E440052FDA9 /* SecondViewController.swift in Sources */,
+				A4AD4F51284F3BFD008E2CB4 /* SceneDelegate.swift in Sources */,
+				A44DE69A2850CDC0008F7597 /* TableHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A4AD4F5D284F3BFE008E2CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4AD4F5E284F3BFE008E2CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4AD4F60284F3BFE008E2CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9N5S557F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XerovaTask1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xerova.XerovaTask1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4AD4F61284F3BFE008E2CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9N5S557F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XerovaTask1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xerova.XerovaTask1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4AD4F46284F3BFD008E2CB4 /* Build configuration list for PBXProject "XerovaTask1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AD4F5D284F3BFE008E2CB4 /* Debug */,
+				A4AD4F5E284F3BFE008E2CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4AD4F5F284F3BFE008E2CB4 /* Build configuration list for PBXNativeTarget "XerovaTask1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AD4F60284F3BFE008E2CB4 /* Debug */,
+				A4AD4F61284F3BFE008E2CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4B014472865B1060011EE2B /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4B014482865B1060011EE2B /* CoreData.xcdatamodel */,
+			);
+			currentVersion = A4B014482865B1060011EE2B /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A4AD4F43284F3BFD008E2CB4 /* Project object */;
+}
