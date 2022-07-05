@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A42E1DE7286CB2600083B63F /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1DE6286CB2600083B63F /* CoreDataController.swift */; };
+		A42E1DE7286CB2600083B63F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1DE6286CB2600083B63F /* CoreDataManager.swift */; };
 		A44DE69A2850CDC0008F7597 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DE6992850CDC0008F7597 /* TableHeader.swift */; };
 		A472AAF328529E440052FDA9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472AAF228529E440052FDA9 /* SecondViewController.swift */; };
 		A4AD4F4F284F3BFD008E2CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD4F4E284F3BFD008E2CB4 /* AppDelegate.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A42E1DE6286CB2600083B63F /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		A42E1DE6286CB2600083B63F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A44DE6992850CDC0008F7597 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		A472AAF228529E440052FDA9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A4AD4F4B284F3BFD008E2CB4 /* XerovaTask1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XerovaTask1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +86,7 @@
 			children = (
 				A4AD4F52284F3BFD008E2CB4 /* ViewController.swift */,
 				A472AAF228529E440052FDA9 /* SecondViewController.swift */,
-				A42E1DE6286CB2600083B63F /* CoreDataController.swift */,
+				A42E1DE6286CB2600083B63F /* CoreDataManager.swift */,
 				A4B0144B2865B5450011EE2B /* Network Controllers */,
 			);
 			path = Controllers;
@@ -193,7 +193,7 @@
 			files = (
 				A4AD4F65284F78AD008E2CB4 /* PostData.swift in Sources */,
 				A4B01446286327F20011EE2B /* NetworkMonitor.swift in Sources */,
-				A42E1DE7286CB2600083B63F /* CoreDataController.swift in Sources */,
+				A42E1DE7286CB2600083B63F /* CoreDataManager.swift in Sources */,
 				A4B014492865B1060011EE2B /* CoreData.xcdatamodeld in Sources */,
 				A4AD4F63284F77AD008E2CB4 /* NetworkManager.swift in Sources */,
 				A4AD4F53284F3BFD008E2CB4 /* ViewController.swift in Sources */,
