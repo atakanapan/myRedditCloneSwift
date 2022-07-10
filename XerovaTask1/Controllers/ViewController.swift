@@ -112,7 +112,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
         }
-        cell.textLabel?.text = "🔝\((posts?[indexPath.row].data.score ) ?? 0 % 1000)k" + "  |  " + (posts?[indexPath.row].data.title ?? "Default Title")
+        cell.textLabel?.text = "\((posts?[indexPath.row].data.score ) ?? 0 % 1000)k" + "  |  " + (posts?[indexPath.row].data.title ?? "Default Title")
         return cell
     }
     

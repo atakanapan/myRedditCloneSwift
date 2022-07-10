@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,53 +35,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Nm-Al-TiX">
-                                <rect key="frame" x="30" y="98" width="354" height="600"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvz-zM-kyM">
-                                        <rect key="frame" x="0.0" y="0.0" width="351.5" height="94.5"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" text="LabelsssssssssssssssssLabelsssssssssssssssssLabels" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-mS-u7y">
-                                                <rect key="frame" x="0.0" y="0.0" width="351.5" height="60"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="nVk-1U-YnP"/>
-                                                </constraints>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9S-tn-UGR">
-                                                <rect key="frame" x="0.0" y="27" width="351.5" height="67.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-Ff-vQH">
-                                        <rect key="frame" x="0.0" y="102.5" width="354" height="497.5"/>
-                                    </imageView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-Ff-vQH">
+                                <rect key="frame" x="30" y="224.5" width="354" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="td8-4e-Y0R"/>
+                                    <constraint firstAttribute="width" constant="354" id="eI3-nx-otK"/>
+                                    <constraint firstAttribute="height" constant="400" id="g5W-25-VzI"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9S-tn-UGR">
+                                <rect key="frame" x="30" y="179.5" width="354" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="XDm-yc-scs"/>
+                                    <constraint firstAttribute="height" constant="30" id="efR-by-Kae"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" text="LabelsssssssssssssssssLabelsssssssssssssssssadsafassssfasfasfasdsgdfshgdfhgdfhdfghdfhdfhdfhdfghgsdkljgklsdgjlkdsgkjsdlkgsd" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-mS-u7y">
+                                <rect key="frame" x="30" y="98" width="354" height="66.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Ccc-3r-3Su"/>
+                                    <constraint firstAttribute="width" constant="354" id="yR1-99-avD"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JEc-PN-wMr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Nm-Al-TiX" firstAttribute="top" secondItem="JEc-PN-wMr" secondAttribute="top" constant="10" id="2qL-8A-ucm"/>
-                            <constraint firstItem="7Nm-Al-TiX" firstAttribute="leading" secondItem="JEc-PN-wMr" secondAttribute="leading" constant="30" id="qa4-1S-OaU"/>
-                            <constraint firstItem="JEc-PN-wMr" firstAttribute="trailing" secondItem="7Nm-Al-TiX" secondAttribute="trailing" constant="30" id="uLF-q1-XGC"/>
+                            <constraint firstItem="gOd-mS-u7y" firstAttribute="centerX" secondItem="eQX-hU-Fv5" secondAttribute="centerX" id="1zC-uy-GmS"/>
+                            <constraint firstItem="c9S-tn-UGR" firstAttribute="top" secondItem="gOd-mS-u7y" secondAttribute="bottom" constant="15" id="8UK-Qf-zGm"/>
+                            <constraint firstItem="gOd-mS-u7y" firstAttribute="top" secondItem="JEc-PN-wMr" secondAttribute="top" constant="10" id="9HL-Oy-CEn"/>
+                            <constraint firstItem="vVo-Ff-vQH" firstAttribute="top" secondItem="c9S-tn-UGR" secondAttribute="bottom" constant="15" id="NiI-qd-nNp"/>
+                            <constraint firstItem="c9S-tn-UGR" firstAttribute="centerX" secondItem="eQX-hU-Fv5" secondAttribute="centerX" id="Qde-5o-yOE"/>
+                            <constraint firstItem="vVo-Ff-vQH" firstAttribute="centerX" secondItem="eQX-hU-Fv5" secondAttribute="centerX" id="laK-kb-it9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MfX-YV-U1e"/>
                     <connections>
                         <outlet property="postImage" destination="vVo-Ff-vQH" id="fJ2-aR-pgL"/>
+                        <outlet property="postImageHeight" destination="g5W-25-VzI" id="28a-s1-VsX"/>
+                        <outlet property="postImageTopConstraint" destination="NiI-qd-nNp" id="lod-fX-C5E"/>
                         <outlet property="postLabel" destination="gOd-mS-u7y" id="DpN-g8-FgS"/>
+                        <outlet property="postLabelHeight" destination="Ccc-3r-3Su" id="XmY-3H-wWM"/>
                         <outlet property="postText" destination="c9S-tn-UGR" id="Ca6-aW-CRc"/>
+                        <outlet property="postTextHeight" destination="efR-by-Kae" id="qUN-Jf-j7k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sp3-Ey-pra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
