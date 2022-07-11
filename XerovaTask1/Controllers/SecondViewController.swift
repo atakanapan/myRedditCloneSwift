@@ -16,8 +16,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var postLabel: UITextView!
     @IBOutlet weak var postText: UITextView!
     @IBOutlet weak var postImage: UIImageView!
-    @IBOutlet weak var postLabelHeight: NSLayoutConstraint!
-    @IBOutlet weak var postTextHeight: NSLayoutConstraint!
     @IBOutlet weak var postImageHeight: NSLayoutConstraint!
     @IBOutlet weak var postImageTopConstraint: NSLayoutConstraint!
     
@@ -28,7 +26,6 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = ""
-        postLabel.sizeThatFits(CGSize(width: postLabel.frame.size.width, height: postLabel.frame.size.height))
         postLabel.font = UIFont.boldSystemFont(ofSize: 18)
         postText.font = postText.font?.withSize(16)
         postLabel.text = postData?.data.title
@@ -39,8 +36,7 @@ class SecondViewController: UIViewController {
         else{
             postText.text = postData?.data.selftext
         }
-        postLabelHeight.constant = self.postLabel.contentSize.height
-        postTextHeight.constant = self.postText.contentSize.height
+        
         
         
         let dataThumbState = getThumbState(thumbString: postData?.data.thumbnail ?? "default")
